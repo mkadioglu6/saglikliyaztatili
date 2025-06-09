@@ -1,0 +1,164 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.home-container {
+  padding: 20px;
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  max-width: none;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.pdf-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 800px;
+  margin: 0 auto;
+  min-height: 80vh;
+}
+
+.pdf-box {
+  background-color: rgba(245, 245, 245, 0.5);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 200px;
+}
+
+.pdf-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  background-color: rgba(233, 236, 239, 0.95);
+}
+
+.pdf-box h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.pdf-box p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.footer-title {
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+/* Add these media queries at the end of your Home.css file */
+
+/* For tablets (screens smaller than 768px) */
+@media screen and (max-width: 768px) {
+  .pdf-grid {
+    grid-template-columns: 1fr;  /* Single column for tablets */
+    max-width: 600px;
+    min-height: auto;  /* Remove fixed height */
+    padding: 10px;
+  }
+
+  .pdf-box {
+    min-height: 150px;  /* Slightly smaller boxes */
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.8rem;  /* Slightly smaller title */
+    margin-bottom: 20px;
+  }
+
+  .footer-title {
+    font-size: 1.8rem;
+    margin-top: 20px;
+  }
+}
+
+/* For mobile phones (screens smaller than 480px) */
+@media screen and (max-width: 480px) {
+  .home-container {
+    padding: 10px;
+  }
+
+  .pdf-grid {
+    gap: 15px;
+    padding: 5px;
+  }
+
+  .pdf-box {
+    min-height: 120px;
+    padding: 15px;
+  }
+
+  .pdf-box h3 {
+    font-size: 1.1rem;
+  }
+
+  .pdf-box p {
+    font-size: 0.8rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .footer-title {
+    font-size: 1.5rem;
+    margin-top: 15px;
+  }
+}
+
+/* For very small phones (screens smaller than 320px) */
+@media screen and (max-width: 320px) {
+  .pdf-box {
+    min-height: 100px;
+    padding: 10px;
+  }
+
+  .pdf-box h3 {
+    font-size: 1rem;
+  }
+
+  .pdf-box p {
+    font-size: 0.7rem;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .footer-title {
+    font-size: 1.3rem;
+  }
+}

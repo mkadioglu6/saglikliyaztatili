@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/gokceada-summer/static/css/main.42c296e3.css",
+    "main.js": "/gokceada-summer/static/js/main.064673dc.js",
+    "static/media/gokceada_slide05.jpg": "/gokceada-summer/static/media/gokceada_slide05.fa7a3edae3a28d569f4d.jpg",
+    "index.html": "/gokceada-summer/index.html",
+    "main.42c296e3.css.map": "/gokceada-summer/static/css/main.42c296e3.css.map",
+    "main.064673dc.js.map": "/gokceada-summer/static/js/main.064673dc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.42c296e3.css",
+    "static/js/main.064673dc.js"
+  ]
+}
